@@ -56,13 +56,13 @@
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <form id="contactForm">
+        <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
             <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
             <button type="submit">Send</button>
         </form>
     </section>
