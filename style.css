@@ -1,0 +1,141 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* section  images */
+
+@media (max-width: 768px) {
+    .project {
+        flex: 1 1 45%; /* Allow each project to take up more space on smaller screens */
+        max-width: 45%; /* Adjust the max-width accordingly */
+    }
+}
+
+@media (max-width: 480px) {
+    .project {
+        flex: 1 1 100%; /* Stack projects in a single column on very small screens */
+        max-width: 100%;
+    }
+}
+
+.projects {
+    display: flex; /* Use flexbox to arrange child elements in a row */
+    flex-wrap: wrap; /* Allow wrapping to the next line if there are too many projects to fit in one row */
+    justify-content: space-around; /* Space out projects evenly in the row */
+    gap: 20px; /* Add some space between each project */
+}
+
+.project {
+    flex: 1 1 30%; /* Flex-grow: 1, Flex-shrink: 1, Base width: 30% */
+    max-width: 30%; /* Ensures that each project doesn’t exceed 30% of the container’s width */
+    box-sizing: border-box; /* Includes padding and border in the element’s total width and height */
+    display: block;
+}
+
+.project img {
+    width: 100%; /* Ensure the image fills the width of the .project div */
+    /* height: 400px; /* Set a fixed height for the images to maintain a vertical orientation */
+    object-fit: fill; /* Cover the space without distorting the image */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    margin-bottom: 10px; /* Add space between the image and the project title */
+}
+
+
+/* section images end */
+
+a {
+    text-decoration: none;   
+}
+
+.project p {
+    color: #333;
+}
+
+.project p:hover {
+    color: goldenrod;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+section#home {
+    background: #f4f4f4;
+}
+
+section#portfolio .projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+/*  footer */
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label, form input, form textarea, form button {
+    width: 80%;
+    margin: 5px 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+form button {
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #555;
+}
